@@ -26,5 +26,4 @@ public class Ejercicio4 {
                 
                 teclado.close(); //libera el recurso
         }
-
 }
