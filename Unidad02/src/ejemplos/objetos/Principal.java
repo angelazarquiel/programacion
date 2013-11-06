@@ -15,9 +15,9 @@ public class Principal {
 		juan= new Alumno();
 		pedro = new Alumno();
 		
-		juan.nombre="Juan";
+		juan.setNombre("Juan");;
 		
-		juan.mensaje();
+		System.out.println(juan.getNombre());
 	}
 
 }
