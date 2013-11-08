@@ -52,5 +52,4 @@ public class Ejercicio2 {
                                  alumno3.getEdad()
                                  ) ) / 3f, " años" );             
         }
-
 }
