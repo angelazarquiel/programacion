@@ -9,7 +9,7 @@ public class DiaLaborableLetra {
 		String dia;
 		
 		System.out.print("Dame el día de la semana (en letra): ");
-		dia = teclado.nextLine();
+		dia = teclado.next();
 		
 		/*
 		dia = dia.toLowerCase();
