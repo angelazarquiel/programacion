@@ -36,9 +36,7 @@ public class Ejercicio5 {
                 		System.out.printf("El año %d es bisiesto", año);
                 	
                 } else System.out.printf("El año %d no es bisiesto", año);
-                
-                
-                
+               
         }
 
 }
