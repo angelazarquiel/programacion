@@ -44,9 +44,6 @@ public class Ejercicio7b {
         		System.out.println("¡¡GANASTE!!");
         	} else
         		System.out.println("¡¡PERDISTE!!");
-        	
-        }
-        
-        	
-    	}
+        }	
+    }
 }
