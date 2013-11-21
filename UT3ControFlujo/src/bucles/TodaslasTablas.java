@@ -9,6 +9,8 @@ public class TodaslasTablas {
 		multiplicacion=numero;
 		linea=1;
 		System.out.println("\nTabla del " + numero);
+		for(int j=0;j<20;j++) System.out.print("-");
+		System.out.println();
 		while (linea<=10) {	
 			   System.out.println(numero + " x " + linea + " = "
 					   	+ (multiplicacion));
