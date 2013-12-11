@@ -25,7 +25,7 @@ public class Ej3b {
 				num_versos++;
 			}
 		}
-		
+
 		System.out.printf("Versos leidos (%d):\n",num_versos);
 		for(int i=0;i<num_versos;i++)
 			System.out.println(versos[i]);
