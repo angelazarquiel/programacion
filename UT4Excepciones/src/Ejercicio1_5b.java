@@ -15,7 +15,7 @@ public class Ejercicio1_5b {
             
             try {                                
                     
-                    System.out.print("Introduzca Edad de Alumno nº1: ");                                
+                    System.out.print("Introduzca Edad de Alumno: ");                                
                     edad = teclado.nextInt();
                     hayDatosErroneos = false;
             }
@@ -28,6 +28,30 @@ public class Ejercicio1_5b {
 		} while ( hayDatosErroneos );
 		
 		return edad;
+	}
+	
+	public static float leerAltura() {
+		boolean hayDatosErroneos=true;
+		float altura=0;
+        do {                        
+            
+            try {                                
+                    
+                    System.out.print("Introduzca Altura de Alumno nº1: ");                                
+                    altura = teclado.nextFloat();
+                    hayDatosErroneos = false;
+            }                        
+            
+            catch ( InputMismatchException entradaInvalida ) {
+                    
+                    System.out.println("Error al escribir la altura. Inténtelo de nuevo.");
+                    teclado.nextLine();
+            }
+    
+        } while ( hayDatosErroneos );
+        
+        return altura;
+        
 	}
 	
 	public static void main(String[] args) {
@@ -48,50 +72,13 @@ public class Ejercicio1_5b {
         nomAlumno1 = teclado.next();
         
         edadAlumno1 = leerEdad();
-        
-        hayDatosErroneos = true;
-        
-        do {                        
-                
-                try {                                
-                        
-                        System.out.print("Introduzca Altura de Alumno nº1: ");                                
-                        altAlumno1 = teclado.nextFloat();
-                        hayDatosErroneos = false;
-                }                        
-                
-                catch ( InputMismatchException entradaInvalida ) {
-                        
-                        System.out.println("Error al escribir la altura. Inténtelo de nuevo.");
-                        teclado.nextLine();
-                }
-        
-        } while ( hayDatosErroneos );
-        
+        altAlumno1 = leerAltura();
+              
         System.out.print("Introduzca Nombre de Alumno nº2: ");                                
         nomAlumno2 = teclado.next();
         
         edadAlumno2 = leerEdad();
-        
-        
-        hayDatosErroneos = true;
-        
-        do {                        
-                
-                try {                                
-                        
-                        System.out.print("Introduzca Altura de Alumno nº2: ");                                
-                        altAlumno2 = teclado.nextFloat();
-                        hayDatosErroneos = false;
-                }                        
-                
-                catch ( InputMismatchException entradaInvalida ) {
-                        
-                        System.out.println("Error al escribir la altura. Inténtelo de nuevo.");
-                        teclado.nextLine();
-                }
-        
-        } while ( hayDatosErroneos );
+        altAlumno2 = leerAltura();
         
         teclado.close();
         
