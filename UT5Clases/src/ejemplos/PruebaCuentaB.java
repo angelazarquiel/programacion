@@ -1,11 +1,11 @@
 package ejemplos;
 
-public class PruebaCuenta {
+public class PruebaCuentaB {
 	
 	public static void main(String[] args){
-		Cuenta mi_cuenta;
+		CuentaB mi_cuenta;
 		
-		mi_cuenta= new Cuenta();
+		mi_cuenta= new CuentaB();
 		
 		mi_cuenta.ingresar(250);
 		

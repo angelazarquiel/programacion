@@ -1,6 +1,6 @@
 package ejemplos;
 
-public class Cuenta {
+public class CuentaB {
 	
 	private double saldo=0;
 	private long num_transacciones=0;
