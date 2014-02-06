@@ -16,9 +16,7 @@
 	                    System.out.print("Introduzca lado: ");
 	                    
 	                    try {
-                            
 	                    	lado = teclado.nextDouble();
-	                    
 	                    	bueno = ( lado > 0 );
 	                    }
 	                    catch ( InputMismatchException entradaInvalida ) {
