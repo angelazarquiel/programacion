@@ -11,8 +11,18 @@ public class PruebaCuentaB {
 		
 		System.out.println("Saldo inicial: " + mi_cuenta.getSaldo());
 		
-		mi_cuenta.sacar(200);
-		if (!mi_cuenta.sacar(100)) System.out.println("Operación no permitida");
+		try {
+		  mi_cuenta.sacar(200);
+		} catch (SaldoInsuficiente si) {
+			System.out.println("Operación no permitida");
+		}
+		
+		try {
+			mi_cuenta.sacar(100);
+		} catch (SaldoInsuficiente si) {
+			System.out.println("Operación no permitida");
+		}
+		
 		mi_cuenta.ingresar(100);
 		
 		System.out.println("Saldo actual: " + mi_cuenta.getSaldo());

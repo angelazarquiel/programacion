@@ -3,9 +3,10 @@ package ejemplos;
 public class PruebaCuenta {
 	
 	public static void main(String[] args){
-		Cuenta mi_cuenta;
+		Cuenta mi_cuenta,otra_cuenta;
 		
-		mi_cuenta= new Cuenta();
+		mi_cuenta= new Cuenta("3456789012");
+		otra_cuenta = new Cuenta("2222222222",200.00);
 		
 		mi_cuenta.ingresar(250);
 		

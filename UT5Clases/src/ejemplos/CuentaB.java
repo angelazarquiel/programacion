@@ -10,14 +10,12 @@ public class CuentaB {
 		num_transacciones++;
 	}
 	
-	public boolean sacar(double cantidad) {
+	public void sacar(double cantidad) throws SaldoInsuficiente {
 		if (saldo<cantidad) {
-			System.out.println("¡No permitido sacar más dinero del disponible!");
-			return false;
+			throw new SaldoInsuficiente();
 		}else{
 			saldo-=cantidad;
 			num_transacciones++;
-			return true;
 		}
 	}
 
