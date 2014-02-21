@@ -1,19 +1,19 @@
-package finales.conversores;
+package ejercicios.conversores;
 
 public class Peso2 {
 
 	/*
-	 * Ejercicio 6. Crea la clase peso, la cual tendrá las siguientes características:
+	 * Ejercicio 6. Crea la clase peso, la cual tendrï¿½ las siguientes caracterï¿½sticas:
 
-	Deberá tener un atributo donde se almacene el peso de un objeto en kilogramos.
-	En el constructor se le pasará el peso y la medida en la qué se ha tomado ‘Lb’ para libras, ‘Li’ para lingotes,
-		‘Oz’ para onzas, ‘P’ para peniques, ‘K’ para kilos, ‘G’ para gramos y ‘Q’ para quintales).
-	Deberá tener los siguientes métodos:
+	Deberï¿½ tener un atributo donde se almacene el peso de un objeto en kilogramos.
+	En el constructor se le pasarï¿½ el peso y la medida en la quï¿½ se ha tomado ï¿½Lbï¿½ para libras, ï¿½Liï¿½ para lingotes,
+		ï¿½Ozï¿½ para onzas, ï¿½Pï¿½ para peniques, ï¿½Kï¿½ para kilos, ï¿½Gï¿½ para gramos y ï¿½Qï¿½ para quintales).
+	Deberï¿½ tener los siguientes mï¿½todos:
 	getLibras. Devuelve el peso en libras.
 	getLingotes. Devuelve el peso en lingotes.
-	getPeso. Devuelve el peso en la medida que se pase como parámetro 
-		(‘Lb' para libras, ‘Li’ para lingotes, ‘Oz’ para onzas, ‘P’ para peniques, ‘K' para kilos, ‘G’ para gramos y ‘Q’ para quintales).
-	Para la realización del ejercicio toma como referencia los siguientes datos:
+	getPeso. Devuelve el peso en la medida que se pase como parï¿½metro 
+		(ï¿½Lb' para libras, ï¿½Liï¿½ para lingotes, ï¿½Ozï¿½ para onzas, ï¿½Pï¿½ para peniques, ï¿½K' para kilos, ï¿½Gï¿½ para gramos y ï¿½Qï¿½ para quintales).
+	Para la realizaciï¿½n del ejercicio toma como referencia los siguientes datos:
 	 	1 Libra = 16 onzas = 453 gramos. 1 Lingote = 32,17 libras = 14,59 kg.
 	 	1 Onza = 0,0625 libras = 28,35 gramos. 1 Penique = 0,05 onzas = 1,55 gramos. 1 Quintal = 100 libras = 43,3 kg.
 	 */
@@ -22,10 +22,10 @@ public class Peso2 {
 	private double peso;
 	
 	public Peso2(double peso, String unidad) {
-		this.peso = peso * factorConversión(unidad);
+		this.peso = peso * factorConversiÃ³n(unidad);
 	}
 	
-	private double factorConversión(String unidad) {
+	private double factorConversiÃ³n(String unidad) {
 		double factor;
 		
 		switch (unidad) {
@@ -42,29 +42,29 @@ public class Peso2 {
 	}
 	
 	public double getLibras() {
-		return peso/factorConversión("lb");
+		return peso/factorConversiÃ³n("lb");
 	}
 	
 	public double getLingotes() {
-		return peso/factorConversión("li");
+		return peso/factorConversiÃ³n("li");
 	}
 	
 	public double getPeso(String medida) {
-		return peso/factorConversión(medida);
+		return peso/factorConversiÃ³n(medida);
 	}
 	
 	public static void main(String[] args) {
 		Peso2 camion;
 		camion = new Peso2(3000, "li");
 		
-		System.out.println("Peso del camión en medida inicial: "
+		System.out.println("Peso del camiÃ³n en medida inicial: "
 				+" "+camion.getPeso("k")+" kg.");
 		
-		System.out.println("Peso del camión en kilos inicialmente: "
+		System.out.println("Peso del camiÃ³n en kilos inicialmente: "
 				+camion.getPeso("oz")+" oz.");
 		
-		System.out.println("Peso del camión en libras: "+camion.getLibras()+".");
-		System.out.println("Peso del camión en lingotes: "+camion.getLingotes()+".");
+		System.out.println("Peso del camiÃ³n en libras: "+camion.getLibras()+".");
+		System.out.println("Peso del camiÃ³n en lingotes: "+camion.getLingotes()+".");
 
 	}
 

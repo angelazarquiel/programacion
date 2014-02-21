@@ -1,12 +1,12 @@
-package finales.conversores;
+package ejercicios.conversores;
 
 /*
- * Ejercicio 3. Realiza una clase Finanzas que convierta dólares a euros y viceversa. 
- * Codifica los métodos dolaresToEuros y eurosToDolares.
- * Prueba que dicha clase funciona correctamente haciendo conversiones entre euros y dólares. La clase tiene que tener:
+ * Ejercicio 3. Realiza una clase Finanzas que convierta dï¿½lares a euros y viceversa. 
+ * Codifica los mï¿½todos dolaresToEuros y eurosToDolares.
+ * Prueba que dicha clase funciona correctamente haciendo conversiones entre euros y dï¿½lares. La clase tiene que tener:
 
-	Un constructor finanzas que establecerá el cambio Dólar-Euro en 1.36.
-	Un constructor finanzas(double), el cual permitirá configurar el cambio Dólar-Euro.
+	Un constructor finanzas que establecerï¿½ el cambio Dï¿½lar-Euro en 1.36.
+	Un constructor finanzas(double), el cual permitirï¿½ configurar el cambio Dï¿½lar-Euro.
  */
 public class Finanzas {
 	public double cambio;

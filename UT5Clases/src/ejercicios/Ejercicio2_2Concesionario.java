@@ -1,4 +1,4 @@
-package finales;
+package ejercicios;
 
 public class Ejercicio2_2Concesionario {
 
