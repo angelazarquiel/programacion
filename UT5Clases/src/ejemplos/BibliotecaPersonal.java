@@ -22,6 +22,11 @@ public class BibliotecaPersonal {
 		num_libros++;
 	}
 	
+	public void añadirLibro(Libro nuevo) {
+		libros[num_libros] = nuevo;
+		num_libros++;
+	}
+	
 	public String toString() {
 		String cadena;
 		
@@ -53,6 +58,12 @@ public class BibliotecaPersonal {
 		return teclado.nextInt();
 	}
 	
+	public void listarLibros() {
+		System.out.println("Biblioteca ("+num_libros+" ejemplares)");
+		for(int i=0;i<this.getNumLibros();i++)
+			System.out.println(this.getLibro(i));
+	}
+	
 	public static void main(String[] args) {
 		BibliotecaPersonal mibiblioteca;
 		int respuesta;
@@ -61,11 +72,39 @@ public class BibliotecaPersonal {
 		
 		respuesta=mibiblioteca.mostrarMenu();
 		while (respuesta<=2){
-			//hacer lo que me diga
+			switch (respuesta) {
+				case 1:
+					//System.out.println(mibiblioteca);
+					mibiblioteca.listarLibros();
+					break;
+				case 2:
+					Libro l = crearNuevoLibro();
+					mibiblioteca.añadirLibro(l);					
+					break;
+			}
+			
 			
 			respuesta = mibiblioteca.mostrarMenu();
 		}
-
+	}
+	
+	public static Libro crearNuevoLibro() {
+		Libro libronuevo;
+		Scanner teclado=new Scanner(System.in);
+		
+		System.out.print("Dime el nombre:");
+		String nombre=teclado.nextLine();
+		System.out.print("Dime el autor:");
+		String autor=teclado.nextLine();
+		System.out.print("Dime el isbn:");
+		String isbn=teclado.nextLine();
+		
+		libronuevo = new Libro(nombre,autor,isbn);
+		
+		return libronuevo;
 	}
 
+	
+	
+	
 }
