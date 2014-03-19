@@ -28,13 +28,21 @@ public class Cinco {
 		System.out.print("Teclea la cadena a encriptar: ");
 		String cadena=teclado.nextLine();
 		
+		for(int i=0;i<cadena.length();i++) {
+			if (!(Character.isDigit(cadena.charAt(i)) ||
+				Character.isLowerCase(cadena.charAt(i)))) {
+				System.out.println("Caracteres no válidos en la entrada");
+				System.exit(0);
+			}
+		}
+		
 		char[] vector = cadena.toCharArray();
 		
 		for(int i=0;i<vector.length-1;i++)
-			vector[i]+=vector[i+1];
+			vector[i]+=vector[i+1]+3;
 		
-		vector[vector.length-1]+=4;
-			
+		vector[vector.length-1]+=4+3;
+
 		cadena=new String(vector);
 		System.out.print("Cadena encriptada: " + cadena);
 
