@@ -33,7 +33,7 @@ public class Cinco {
 				(Character.isDigit(cadena.charAt(i)) ||
 				 Character.isLowerCase(cadena.charAt(i)) ||
 				 cadena.charAt(i)==' ')) {
-				System.out.println("Caracteres no válidos en la entrada");
+				System.out.println("Caracteres no permitidos en la entrada");
 				System.exit(0);
 			}
 		}
