@@ -29,8 +29,10 @@ public class Cinco {
 		String cadena=teclado.nextLine();
 		
 		for(int i=0;i<cadena.length();i++) {
-			if (!(Character.isDigit(cadena.charAt(i)) ||
-				Character.isLowerCase(cadena.charAt(i)))) {
+			if (!
+				(Character.isDigit(cadena.charAt(i)) ||
+				 Character.isLowerCase(cadena.charAt(i)) ||
+				 cadena.charAt(i)==' ')) {
 				System.out.println("Caracteres no válidos en la entrada");
 				System.exit(0);
 			}
