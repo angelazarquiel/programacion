@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class Matrices {
 
+	public enum Cursos {ESO,BAC,CGM,CGS,PCPI};
+	
 	public static void main(String[] args) {
 		int[][] array1;
 		
@@ -63,6 +65,35 @@ public class Matrices {
 		caracteres2[1][2]='e';
 		caracteres2[2][0]='f';
 		caracteres2[2][1]='g';
+		
+		
+		/*
+		 * Instituto	ESO	BAC	CGM CGS	PCPI
+		 *   IES 1		200	34
+		 *   IES 2		124	23
+		 *   IEs 3		234	21
+		 * 
+		 */
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		int[] matriculados=new int[5];
+		
+		matriculados[Cursos.ESO.ordinal()]=200;
+	
+		final int ESO=0;
+		
+		matriculados[ESO]=200;
 		
 	}
 
