@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class Pantalla {
 	private char caracter;
 	private char[][] lienzo;
-	private final int NUM_FILAS=8,NUM_COLUMNAS=10;
+	private final int NUM_FILAS=20,NUM_COLUMNAS=20;
 	
 	/**
 	 * Contruye un objeto pantalla de 10x8, con el caracter de dibujo
