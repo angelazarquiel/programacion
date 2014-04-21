@@ -39,7 +39,7 @@ public class ArrayOrdenado {
 		x=new ArrayOrdenado(100);
 		
 		for(int i=0;i<100;i++) {
-			x.setElemento(i,(int)(Math.random()*100+1));
+			x.setElemento(0,(int)(Math.random()*100+1));
 		}
 		
 		System.out.println(x);
