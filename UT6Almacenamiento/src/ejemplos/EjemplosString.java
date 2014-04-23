@@ -47,5 +47,5 @@ public class EjemplosString {
 		// el fin de informar, para cada carácter, si la cadena lo contiene y en qué
 		// posición está el primero.
 	}
-
 }
+
