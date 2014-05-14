@@ -73,7 +73,9 @@ public class PruebaClinica {
 
 				break;
 			case 2: // Borrar animal
-
+				// 3º
+				animales[2]=animales[--numAnimales];
+				animales[numAnimales]=null;
 				break;
 			case 3: // Listar
 				for(int i=0;i<numAnimales;i++)
