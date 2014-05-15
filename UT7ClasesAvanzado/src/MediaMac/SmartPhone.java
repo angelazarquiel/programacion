@@ -37,8 +37,15 @@ public class SmartPhone extends Aparato {
 	
 	@Override
 	public String toString() {
+		StringBuilder sb=new StringBuilder();
+		
+		for(int i=0;i<numTecnologias;i++) {
+			sb.append(tecTransm[i]);
+			if (i<numTecnologias-1) sb.append(", ");
+		}
+		
 		return super.toString() + "\nSubClase: SmartPhone\n\tTecnologías-->"
-				+ Arrays.toString(tecTransm);
+				+ sb;
 	}
 
 	// A�adir el m�todo addTecnolog�a en la clase SmartPhone que tome como
