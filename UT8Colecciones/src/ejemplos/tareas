@@ -1,0 +1,12 @@
+1. Crea una colección, de tipo ArrayList que cargue 10
+ números por teclado. Después recorrerá la colección y
+ devolverá la cantidad de números positivos, cero y negativos.
+
+2. Crear una colección de caracteres que se irán
+introduciendo por teclado, hasta que se introduzca un *.
+Decir si hay algún caracter duplicado.
+
+3. Crea una colección con los primeros X números de la serie
+de Fibonacci, donde X es un número que pedirás al usuario.
+Después pregunta números y di si está o no en la colección.
+El programa terminará cuando el usuario introduzca un 0.

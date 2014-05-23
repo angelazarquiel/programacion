@@ -24,17 +24,6 @@ public class Colecciones1 {
 			System.out.println(it.next());
 		}
 		
-		Collection<String> cadenas=new ArrayList<String>();
-		
-		cadenas.add("Hola mundo de las colecciones");
-		cadenas.add("Adiós");
-		for(String i:cadenas) {
-			System.out.println(i);
-		}
-		
-		
-		
-		
 	}
 
 }
